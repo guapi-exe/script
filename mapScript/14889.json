@@ -1,0 +1,360 @@
+
+{
+ "block": {
+   "scathe": {
+     "rotateSpeed": 10,
+     "reload": 50,
+     "ammoPerShot": 0,
+     "ammoTypes.carbide.spawnUnit.speed": 1,
+     "ammoTypes.carbide.spawnUnit.rotateSpeed": 10,
+     "ammoTypes.carbide.spawnUnit.weapons.0.bullet.splashDamage": 100
+   },"spectre": {
+     "ammoPerShot": 0
+   },"foreshadow": {
+     "reload": 50
+   },"meltdown": {
+     "reload": 50
+   },"worldProcessor": {
+     "maxInstructionsPerTick": 2147483646
+   },"coreAcropolis": {
+     "armor": 2147483647,
+     "health": 2147483647
+   },"shieldProjector": {
+     "health": 2147483647
+   }
+ }, "unit": {
+    "disrupt": {
+    "weapons.0.bullet.spawnUnit.speed":4,
+    "weapons.0.reload": 800,
+    "weapons.1.reload": 800,
+    "weapons.0.shoot.shots": 50,
+    "weapons.1.shoot.shots": 50,
+    "weapons.0.inaccuracy": 200,
+    "weapons.1.inaccuracy": 200,
+    "weapons.0.bullet.spawnUnit.lifetime":800,
+    "weapons.0.bullet.spawnUnit.abilities.+=": [
+      {
+        "type":"EnergyFieldAbility",
+        "damage": 30,
+        "reload": 100,
+        "range": 180,
+        "statusDuration":36,
+        "maxTargets": 25,
+        "healPercent": 0.5
+      }
+    ],
+    "weapons.0.bullet.spawnUnit.abilities.+=": [
+      {
+        "type": "ForceFieldAbility",
+        "radius": 20,
+        "regen": 4.2,
+        "max": 90,
+        "cooldown": 9
+      }
+    ],
+    "abilities.+=": [
+      {
+        "type": "ForceFieldAbility",
+        "radius": 200,
+        "regen": 4.2,
+        "max": 9600,
+        "cooldown": 960
+      }
+    ],
+    "abilities.+=": [
+      {
+        "type": "RepairFieldAbility",
+        "range": 3,
+        "amount": 5,
+        "reload": 10
+      }
+    ]
+  },"conquer": {
+      "rotateSpeed": 3,
+      "weapons.0.rotateSpeed": 8,
+      "weapons.0.bullet.damage": 10,
+      "weapons.0.bullet.spawnBullets.splashDamage": 5,
+      "weapons.0.reload": 20,
+      "abilities.+=": [
+        {
+          "type": "ForceFieldAbility",
+          "radius": 200,
+          "regen": 4.2,
+          "max": 960,
+          "cooldown": 96
+        }
+      ],
+      "abilities.+=": [
+      {
+        "type":"EnergyFieldAbility",
+        "damage": 30,
+        "reload": 100,
+        "range": 280,
+        "statusDuration":36,
+        "maxTargets": 250,
+        "healPercent": 0.5
+      }
+    ],
+    "abilities.+=": [
+      {
+        "type": "RepairFieldAbility",
+        "range": 3,
+        "amount": 5,
+        "reload": 10
+      }
+    ]
+  },"collaris": {
+    "reload": 1000,
+    "weapons.0.reload": 1000,
+    "abilities.+=": [
+      {
+        "type":"EnergyFieldAbility",
+        "damage": 30,
+        "reload": 100,
+        "range": 280,
+        "statusDuration":36,
+        "maxTargets": 250,
+        "healPercent": 0.5
+      }
+    ],
+    "abilities.+=": [
+      {
+        "type": "RepairFieldAbility",
+        "range": 3,
+        "amount": 5,
+        "reload": 10
+      }
+    ]
+  },"anthicus": {
+    "weapons.0.bullet.spawnUnit.speed": 3,
+    "weapons.0.bullet.spawnUnit.lifetime": 300
+  },"reign": {
+    "weapons.0.bullet.hitEffect": "reactorExplosion",
+    "weapons.0.reload": 30,
+    "weapons.0.bullet.lifetime": 40,
+    "weapons.0.bullet.splashDamageRadius": 40,
+    "weapons.0.bullet.splashDamage": 180,
+    "abilities.+=": [
+      {
+        "type": "ForceFieldAbility",
+        "radius": 200,
+        "regen": 4.2,
+        "max": 9600,
+        "cooldown": 960
+      }
+    ],
+    "abilities.+=": [
+      {
+        "type": "RepairFieldAbility",
+        "range": 3,
+        "amount": 5,
+        "reload": 10
+      }
+    ]
+  },"omura": {
+    "flying": true,
+    "weapons.0.reload": 10,
+    "weapons.0.bullet.damage": 100,
+    "weapons.0.bullet.length": 1000,
+    "weapons.0.bullet.pointEffectSpace": 120,
+    "abilities.+=": [
+      {
+        "type": "ForceFieldAbility",
+        "radius": 200,
+        "regen": 4.2,
+        "max": 9600,
+        "cooldown": 960
+      }
+    ],
+    "abilities.+=": [
+      {
+        "type": "RepairFieldAbility",
+        "range": 3,
+        "amount": 5,
+        "reload": 10
+      }
+    ]
+  },"toxopid":{
+    "weapons.1.bullet.fragBullet": 18,
+    "weapons.0.bullet.length": 360,
+    "weapons.0.bullet.reload": 10,
+    "weapons.0.bullet.damage": 300,
+    "weapons.0.bullet.serrations": 50,
+    "weapons.0.bullet.serrationLenScl": 10,
+    "abilities.+=": [
+      {
+        "type": "ForceFieldAbility",
+        "radius": 200,
+        "regen": 4.2,
+        "max": 9600,
+        "cooldown": 960
+      }
+    ],
+    "abilities.+=": [
+      {
+        "type": "RepairFieldAbility",
+        "range": 3,
+        "amount": 5,
+        "reload": 10
+      }
+    ]
+  },"navanax": {
+    "flying": true,
+    "weapons.4.reload": 5,
+    "weapons.0.bullet.shootEffect": "hitMeltdown",
+    "weapons.0.bullet.hitEffect": "hitMeltdown",
+    "weapons.1.bullet.hitEffect": "hitMeltdown",
+    "weapons.2.bullet.hitEffect": "hitMeltdown",
+    "weapons.3.bullet.hitEffect": "hitMeltdown",
+    "weapons.4.bullet.speed":10,
+    "abilities.+=": [
+      {
+        "type": "ForceFieldAbility",
+        "radius": 200,
+        "regen": 4.2,
+        "max": 9600,
+        "cooldown": 960
+      }
+    ],
+    "abilities.+=": [
+      {
+        "type":"EnergyFieldAbility",
+        "damage": 30,
+        "reload": 100,
+        "range": 280,
+        "statusDuration":36,
+        "maxTargets": 250,
+        "healPercent": 0.5
+      }
+    ],
+    "abilities.+=": [
+      {
+        "type": "RepairFieldAbility",
+        "range": 3,
+        "amount": 5,
+        "reload": 10
+      }
+    ]
+  },"eclipse": {
+    "weapons.0.bullet.length": 500,
+    "weapons.0.bullet.damage": 600,
+    "weapons.0.reload": 35,
+    "abilities.+=": [
+      {
+        "type": "ForceFieldAbility",
+        "radius": 200,
+        "regen": 4.2,
+        "max": 4000,
+        "cooldown": 400
+      }
+    ],
+    "abilities.+=": [
+      {
+        "type": "EnergyFieldAbility",
+        "damage": 30,
+        "reload": 100,
+        "range": 280,
+        "statusDuration": 36,
+        "maxTargets": 250,
+        "healPercent": 0.5
+      }
+    ],
+    "abilities.+=": [
+      {
+        "type": "RepairFieldAbility",
+        "range": 3,
+        "amount": 10,
+        "reload": 10
+      }
+    ]
+  },"stell": {
+    "weapons.0.bullet.damage": 8
+  },"locus": {
+    "weapons.0.bullet.damage": 16
+  },"precept": {
+    "weapons.0.bullet.damage": 30,
+    "weapons.0.bullet.fragBullet.damage": 10
+  },"vanquish": {
+    "weapons.0.bullet.damage": 80,
+    "weapons.0.bullet.fragBullet.damage": 10
+  },"nova": {
+    "abilities.+=": [
+      {
+        "type": "ShieldRegenFieldAbility",
+        "amount": 20,
+        "max": 50,
+        "reload": 180,
+        "range": 120
+      }
+    ]
+  },"pulsar": {
+    "abilities.+=": [
+      {
+        "type": "RepairFieldAbility",
+        "range": 100,
+        "amount": 10,
+        "reload": 120
+      }
+    ]
+  },"quasar": {
+    "abilities.+=": [
+      {
+        "type": "RepairFieldAbility",
+        "range": 100,
+        "amount": 15,
+        "reload": 120
+      }
+    ],
+    "abilities.+=": [
+      {
+        "type": "ShieldRegenFieldAbility",
+        "amount": 20,
+        "max": 100,
+        "reload": 180,
+        "range": 120
+      }
+    ]
+  },"vela": {
+    "abilities.+=": [
+      {
+        "type": "RepairFieldAbility",
+        "range": 100,
+        "amount": 15,
+        "reload": 120
+      }
+    ],
+    "abilities.+=": [
+      {
+        "type": "ShieldRegenFieldAbility",
+        "amount": 20,
+        "max": 100,
+        "reload": 180,
+        "range": 120
+      }
+    ],"abilities.+=": [
+      {
+        "type": "EnergyFieldAbility",
+        "damage": 15,
+        "reload": 200,
+        "range": 280,
+        "statusDuration": 36,
+        "maxTargets": 250,
+        "healPercent": 0.5
+      }
+    ]
+  },"oct": {
+    "health": 10000,
+    "abilities.+=": [
+    {
+      "type": "EnergyFieldAbility",
+      "damage": 15,
+      "reload": 100,
+      "range": 280,
+      "statusDuration": 36,
+      "maxTargets": 250,
+      "healPercent": 1
+    }
+  ]
+  }
+}
+}

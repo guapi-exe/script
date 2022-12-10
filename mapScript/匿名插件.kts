@@ -18,10 +18,7 @@ listen<EventType.PlayerConnect> {
 
 onEnable {
     launch {
-        DBApi.DB.awaitInit()
-        loop(Dispatchers.game) {
-            delay(5)
-            Groups.player.forEach { it.updateName() }
-        }
+        DBApi.DB.awaitInit()  
+        Groups.player.forEach { it.updateName() }
     }
 }
